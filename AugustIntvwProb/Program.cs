@@ -98,20 +98,67 @@ namespace AugustIntvwProb
             //}
             //Console.WriteLine(highestNum);
 
-            //Print the nth number of a Fibonacci Series 
+            //*********Print the nth number of a Fibonacci Series 
+            //Console.WriteLine("Please enter a number");
+            //int userNum = int.Parse(Console.ReadLine());
+            //int firstNum = 0;
+            //int secondNum = 1;
+
+
+            //for (int i = 2; i <= userNum; i++)
+            //{
+            //    int result = firstNum + secondNum;
+            //    Console.WriteLine(result);
+            //    firstNum = secondNum;
+            //    secondNum = result;
+            //
+            //}
+
+            //********Switch two variable without a temp variable
+            //int num1 = 3;
+            //int num2 = 5;
+            //Console.WriteLine(num1);
+            //Console.WriteLine(num2);
+
+            //num1 = num1 + num2;
+            //num2 = num1 - num2;
+            //num1 = num1 - num2;
+            //Console.WriteLine(num1);
+            //Console.WriteLine(num2);
+
+            //*********Sort an array
+            //int[] myArray = { 60, 10, 80, 20, 70, 30, 40, 50 };
+            //foreach(int i in myArray)
+            //{
+            //    Console.Write(i);
+            //}
+            //Console.WriteLine();
+            //Array.Sort(myArray);
+            //foreach(int i in myArray)
+            //{
+            //    Console.Write(i);
+            //}
+            //Array.Reverse(myArray);
+            //foreach (int i in myArray) Console.Write(i);
+
+            //List all prime numbers
             Console.WriteLine("Please enter a number");
-            int userNum = int.Parse(Console.ReadLine());
-            int firstNum = 0;
-            int secondNum = 1;
-            
+            int num = int.Parse(Console.ReadLine());
 
-            for (int i = 2; i <= userNum; i++)
+            for (int i = 2; i < num; i++)
             {
-                int result = firstNum + secondNum;
-                Console.WriteLine(result);
-                firstNum = secondNum;
-                secondNum = result;
-
+               // for (int j = 2; j < num - 1; j++)
+               // {
+                    if (num % i == 0 )
+                    {
+                        break;
+                          
+                    }
+                    else if(i == num - 1)
+                    {
+                        Console.WriteLine(i + " is prime.");
+                    }
+                //}
             }
 
 
