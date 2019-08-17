@@ -70,7 +70,7 @@ namespace AugustIntvwProb
             //Console.WriteLine("please enter a number: ");
             //int num = int.Parse(Console.ReadLine());
 
-            //for (int i = 2; i < num; i++)
+            //for (int i = 2; i < num / 2; i++)
             //{
 
             //    if (num % i == 0)
@@ -142,24 +142,53 @@ namespace AugustIntvwProb
             //foreach (int i in myArray) Console.Write(i);
 
             //List all prime numbers
-            Console.WriteLine("Please enter a number");
-            int num = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Please enter a number");
+            //int num = int.Parse(Console.ReadLine());
+            //
+            //for (int i = 2; i < num; i++)
+            //{
+            //   // for (int j = 2; j < num - 1; j++)
+            //   // {
+            //        if (num % i == 0 )
+            //        {
+            //            break;
 
-            for (int i = 2; i < num; i++)
-            {
-               // for (int j = 2; j < num - 1; j++)
-               // {
-                    if (num % i == 0 )
-                    {
-                        break;
-                          
-                    }
-                    else if(i == num - 1)
-                    {
-                        Console.WriteLine(i + " is prime.");
-                    }
-                //}
-            }
+            //        }
+            //        else if(i == num - 1)
+            //        {
+            //            Console.WriteLine(i + " is prime.");
+            //        }
+            //    //}
+            //}
+
+            //divide a number without using "/" symbol
+            //int num1 = 144;
+            //int num2 = 4;
+            //int smallerNum = 0;
+            //int largerNum = 0;
+            //int quotient = 0;
+
+            //if(num1 > num2)
+            //{
+            //    largerNum = num1;
+            //    smallerNum = num2;
+            //}
+            //else if(num2 > num1)
+            //{
+            //    largerNum = num2;
+            //    smallerNum = num1;
+            //}
+            //while(quotient * smallerNum != largerNum)
+            //{
+            //    quotient++;
+            //}
+
+            //Console.WriteLine("num 1 / num2  =" + quotient);
+
+            //Find min and max values in an array
+            int[] myArray =  { 74, 85, 37, 95, 84, 46, };
+            int minVal;
+            int maxVal;
 
 
             Console.ReadKey();
