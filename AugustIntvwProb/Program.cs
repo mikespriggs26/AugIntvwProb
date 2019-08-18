@@ -186,9 +186,46 @@ namespace AugustIntvwProb
             //Console.WriteLine("num 1 / num2  =" + quotient);
 
             //Find min and max values in an array
-            int[] myArray =  { 74, 85, 37, 95, 84, 46, };
-            int minVal;
-            int maxVal;
+            //int[] myArray =  { 74, 85, 37, 95, 84, 46, };
+            //int maxVal = 0;
+            //int minVal = myArray[0];
+
+            //foreach (var i in myArray)
+            //{
+            //    if(i > maxVal)
+            //    {
+            //        maxVal = i;
+            //    }
+            //}
+            //foreach (var i in myArray)
+            //{
+            //    if(i < minVal)
+            //    {
+            //        minVal = i;
+            //    }
+            //}
+            //Console.WriteLine("High number is " + maxVal);
+            //Console.WriteLine("Low number is " + minVal);
+
+            //Factorial digit sum
+            Console.WriteLine("Please enter a number:");
+            int userNum = int.Parse(Console.ReadLine());
+            int factorialSum = 0;
+
+            for (int i = userNum - 1; i >= 1; i--)
+            {
+                userNum = userNum * i;
+            }
+            Console.WriteLine(userNum);
+
+            int numLength = userNum.ToString().Length;
+            for (int i = 1; i <= numLength; i++)
+            {
+                factorialSum += userNum % 10;
+                userNum = userNum / 10;
+            }
+            Console.WriteLine(factorialSum);
+
 
 
             Console.ReadKey();
