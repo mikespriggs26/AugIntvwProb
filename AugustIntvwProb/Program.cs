@@ -208,23 +208,46 @@ namespace AugustIntvwProb
             //Console.WriteLine("Low number is " + minVal);
 
             //Factorial digit sum
-            Console.WriteLine("Please enter a number:");
-            int userNum = int.Parse(Console.ReadLine());
-            int factorialSum = 0;
+            //Console.WriteLine("Please enter a number:");
+            //int userNum = int.Parse(Console.ReadLine());
+            //int factorialSum = 0;
 
-            for (int i = userNum - 1; i >= 1; i--)
-            {
-                userNum = userNum * i;
-            }
-            Console.WriteLine(userNum);
+            //for (int i = userNum - 1; i >= 1; i--)
+            //{
+            //    userNum = userNum * i;
+            //}
+            //Console.WriteLine(userNum);
 
-            int numLength = userNum.ToString().Length;
-            for (int i = 1; i <= numLength; i++)
+            //int numLength = userNum.ToString().Length;
+            //for (int i = 1; i <= numLength; i++)
+            //{
+            //    factorialSum += userNum % 10;
+            //    userNum = userNum / 10;
+            //}
+            //Console.WriteLine(factorialSum);
+
+            //Smallest multiple of all numbers 1 - 20
+            bool isMultiple = false;
+            int i = 20;
+            while (isMultiple == false)
             {
-                factorialSum += userNum % 10;
-                userNum = userNum / 10;
+
+                i++;
+                //for (int i = 2; i <= ; i++)
+                //{
+                    if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0 && i % 7 == 0 && i % 11 == 0 && i % 13 == 0 && i % 17 == 0 && i % 19 == 0  )
+                    {
+                        isMultiple = true;
+                        Console.WriteLine(i);
+
+                    }
+                    //else
+                    //{
+                    //    break;
+                    //}
+                //}
             }
-            Console.WriteLine(factorialSum);
+            Console.WriteLine(i);
 
 
 
