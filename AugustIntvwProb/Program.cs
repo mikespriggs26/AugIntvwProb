@@ -227,28 +227,42 @@ namespace AugustIntvwProb
             //Console.WriteLine(factorialSum);
 
             //Smallest multiple of all numbers 1 - 20
-            bool isMultiple = false;
-            int i = 20;
-            while (isMultiple == false)
+            //bool isMultiple = false;
+            //int i = 20;
+            //while (isMultiple == false)
+            //{
+            //    i++;
+
+            //    if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0 && i % 7 == 0 && i % 11 == 0 && i % 13 == 0 && i % 17 == 0 && i % 19 == 0)
+            //    {
+            //        isMultiple = true;
+            //        Console.WriteLine(i);
+
+            //    }
+            //}     
+            //Console.WriteLine(i);
+
+            //Merge two arrays
+            //int[] myArr = {1,2,3,4 };
+            //string[] myArr2 = { "a", "b", "c", "d", };
+            //string[] myArr3 = new string[4];
+            //for (int i = 0; i < myArr3.Length; i++)
+            //{
+            //    myArr3[i] = myArr[i] + myArr2[i];
+            //}
+            //foreach (var item in myArr3)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //653xy
+            for (int i = 65300; i < 65400; i++)
             {
-
-                i++;
-                //for (int i = 2; i <= ; i++)
-                //{
-                    if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0 && i % 7 == 0 && i % 11 == 0 && i % 13 == 0 && i % 17 == 0 && i % 19 == 0  )
-                    {
-                        isMultiple = true;
-                        Console.WriteLine(i);
-
-                    }
-                    //else
-                    //{
-                    //    break;
-                    //}
-                //}
+                if (i % 80 == 0)
+                {
+                    Console.WriteLine(i);
+                }
             }
-            Console.WriteLine(i);
-
 
 
             Console.ReadKey();
