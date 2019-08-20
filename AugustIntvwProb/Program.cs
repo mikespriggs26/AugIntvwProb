@@ -256,11 +256,26 @@ namespace AugustIntvwProb
             //}
 
             //653xy
-            for (int i = 65300; i < 65400; i++)
+            //for (int i = 65300; i < 65400; i++)
+            //{
+            //    if (i % 80 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+            //find two sums in an array that add up to a given number 
+            int targetNum = 20;
+            int[] nums = new int[] {2,7,9,11, };
+            for (int i = 0; i < nums.Length - 1; i++)
             {
-                if (i % 80 == 0)
+                for (int j = nums.Length -1; j > i; j--)
                 {
-                    Console.WriteLine(i);
+                    
+                    if (nums[i] + nums[j] == targetNum)
+                    {
+                        Console.WriteLine(nums[i] + " " + nums[j]);
+                    }
                 }
             }
 
